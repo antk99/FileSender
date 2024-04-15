@@ -8,7 +8,7 @@
 
 <img src="https://i.imgur.com/AzyGG2x.png" alt="AWS Lambda" width="150px" />
 
-<img src="https://isagebrum.com/images/technology/dynamo_db-image.svg" alt="AWS DynamoDB" width="150px" />
+<img src="https://files.cdata.com/media/media/i3nhanbw/20191018-dynamodb-performance-0.png" alt="AWS DynamoDB" width="150px" />
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Electron_Software_Framework_Logo.svg/2048px-Electron_Software_Framework_Logo.svg.png" alt="Electron.js" width="150px" />
 
@@ -22,7 +22,14 @@ File Sender is a desktop application designed to allow users to securely send fi
 
 ## Installation
 
-To install and run the File Sender desktop application, follow these steps:
+To install and run the File Sender desktop application, you can either download the executable from the releases on this GitHub, or download the code and built it yourself.
+
+### Instructions for Building It Yourself
+
+Before you get started, you need to make sure you have Node.js installed on your system: https://nodejs.org/en. Run the following command to make sure Node.js is installed correctly.
+```bash
+node -v
+```
 
 1. **Clone Repository**:
     ```bash
