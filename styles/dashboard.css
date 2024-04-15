@@ -1,0 +1,109 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    padding: 52px;
+    gap: 32px;
+
+    width: 75%;
+    height: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.upload {
+    width: 100%;
+    min-height: 150px;
+    border: 2px dashed var(--gray);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.upload:hover {
+    cursor: pointer;
+}
+
+#chooseFileButton {
+    height: 0.1px;
+    width: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+#uploadButton {
+    width: 100%;
+    background: var(--primary);
+    color: var(--light);
+    border: none;
+}
+
+#uploadButton:hover {
+    cursor: pointer;
+}
+
+#uploadButton:disabled {
+    background: var(--gray);
+    color: var(--light);
+    cursor: not-allowed;
+}
+
+.upload-history {
+    width: 100%;
+}
+
+.files {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 0px 16px 100px 0px;
+}
+
+.file {
+    display: flex;
+    padding: 12px;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--gray);
+    border-radius: 8px;
+}
+
+.file:first-child {
+    border-color: var(--primary);
+}
+
+.file-info-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.file-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.file-info p:first-child {
+    font-weight: bold;
+}
+
+.delete-file:hover {
+    cursor: pointer;
+}
+
+.hash {
+    color: var(--gray);
+}

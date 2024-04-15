@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="styles/dashboard.css" />
+<script src="scripts/dashboard.js"></script>
+<div class="container">
+    <div class="header">
+        <div class="title">
+            <h2>Upload Files</h2>
+            <p>Upload files securely to the server</p>
+        </div>
+        <p id="user-name"></p>
+    </div>
+    <div id="uploadSection" class="upload">
+        <input id="chooseFileButton" type="file" />
+        <img class="invert" src="https://cdn-icons-png.flaticon.com/512/15683/15683321.png" width="75px" />
+        <p id="chosenFile">Choose file to upload (max 300KB)</p>
+    </div>
+    <button id="uploadButton" disabled>Upload File</button>
+    <div class="upload-history">
+        <h2 id="history" style="margin-bottom: 16px">Uploaded Files</h2>
+        <div id="files" class="files"></div>
+    </div>
+</div>
+<a class="signature" href="https://anthonykumar.com" target="_blank">Made by Anthony Kumar <img class="invert" src="https://cdn-icons-png.flaticon.com/512/8532/8532423.png" height="16px"/></a></p>

@@ -1,0 +1,155 @@
+/* Variables */
+:root {
+    /* Colors */
+    --primary: #177e89;
+    --dark: #323031;
+    --light: #ffffff;
+    --gray: #7c7c7c;
+
+    /* Sizes */
+    --signature-height: 50px;
+}
+
+/* Box sizing rules */
+html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* Remove default margin and padding */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+dl,
+dd,
+figure,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+
+/* Remove default list styles */
+ul,
+ol {
+    list-style: none;
+}
+
+/* Remove default styles for links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    color: var(--light);
+    background: #323031;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.signature {
+    position: fixed;
+    bottom: 0;
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: var(--signature-height);
+    background: var(--primary);
+    color: var(--light);
+    font-weight: 500;
+}
+
+.signature img {
+    margin-left: 8px;
+    margin-bottom: 4px;
+}
+
+@media screen and (max-height: 700px) {
+    .signature {
+        display: none;
+    }
+}
+
+img {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+}
+
+button {
+    padding: 12px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.invert {
+    filter: invert(1);
+}
+
+/* loading spinner from https://loading.io/css/ */
+.lds-ring,
+.lds-ring div {
+    box-sizing: border-box;
+}
+.lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 10px;
+    height: 10px;
+}
+.lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    margin-top: -2px;
+    border: 2px solid currentColor;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: currentColor transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

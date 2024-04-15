@@ -1,0 +1,59 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    padding: 52px;
+    gap: 32px;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    border-bottom: 6px var(--primary) solid;
+    font-size: 32px;
+}
+
+.subtitle {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.sign-in {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-width: 300px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.field label {
+    font-weight: 500;
+}
+
+.field input {
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: 1px solid var(--gray);
+    background: var(--dark);
+    color: var(--light);
+}
+
+.field input::placeholder {
+    color: var(--gray);
+}
+
+.field input:focus {
+    border: 1px solid var(--primary);
+    outline: none;
+}
+
+.submit {
+    background: var(--primary);
+    color: var(--light);
+    border: none;
+}
